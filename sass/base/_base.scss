@@ -16,3 +16,20 @@ html {
 body {
 	box-sizing: border-box;
 }
+
+
+
+
+@media (max-width: 1366px) {
+    html {
+        //This defines what 1rem is, so thats why its not on typography file
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        //This defines what 1rem is, so thats why its not on typography file
+        font-size: 60%;
+    }
+}
