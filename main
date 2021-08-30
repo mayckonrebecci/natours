@@ -1,0 +1,25 @@
+Updating 49a4d8c..4c13928
+Fast-forward
+ css/fonts/linea-basic-10.eot      | Bin 0 -> 21478 bytes
+ css/fonts/linea-basic-10.svg      | 145 +++++++++++++
+ css/fonts/linea-basic-10.ttf      | Bin 0 -> 21284 bytes
+ css/fonts/linea-basic-10.woff     | Bin 0 -> 12260 bytes
+ css/icon-font.css                 | 445 ++++++++++++++++++++++++++++++++++++++
+ css/style.css                     |  69 +++++-
+ index.html                        |  42 +++-
+ sass/abstract/_variables.scss     |   6 +-
+ sass/base/_base.scss              |   6 +-
+ sass/base/_utilities.scss         |   4 +
+ sass/components/_button.scss      |  11 +-
+ sass/components/_feature-box.scss |  24 ++
+ sass/layout/_grid.scss            |  26 ++-
+ sass/layout/_header.scss          |   5 +-
+ sass/main.scss                    |   1 +
+ sass/pages/_home.scss             |  26 +++
+ 16 files changed, 791 insertions(+), 19 deletions(-)
+ create mode 100644 css/fonts/linea-basic-10.eot
+ create mode 100644 css/fonts/linea-basic-10.svg
+ create mode 100644 css/fonts/linea-basic-10.ttf
+ create mode 100644 css/fonts/linea-basic-10.woff
+ create mode 100644 css/icon-font.css
+ create mode 100644 sass/components/_feature-box.scss
