@@ -10,7 +10,7 @@
 
 html {
     //This defines what 1rem is, so thats why its not on typography file
-	font-size: 100%;
+	font-size: 80%;
 }
 
 body {
@@ -23,13 +23,13 @@ body {
 @media (max-width: 1366px) {
     html {
         //This defines what 1rem is, so thats why its not on typography file
-        font-size: 80%;
+        font-size: 60%;
     }
 }
 
 @media (max-width: 1024px) {
     html {
         //This defines what 1rem is, so thats why its not on typography file
-        font-size: 60%;
+        font-size: 40%;
     }
 }

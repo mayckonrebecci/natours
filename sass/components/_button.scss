@@ -1,7 +1,7 @@
 .btn {    
     &:link,
     &:visited {
-        padding: 0.9375rem 2.5rem;
+        padding: 1.5rem 3rem;
         display: inline-block;
         text-transform: uppercase;
         border-radius: 6.25rem;
@@ -79,4 +79,13 @@
         transform: translateY(0);
     }
 
+}
+
+@media (max-width: 1024px){
+    .btn-text {
+        &:link,
+        &:visited {
+            margin-bottom: 100px;
+        }
+    }
 }

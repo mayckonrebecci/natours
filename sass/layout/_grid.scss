@@ -1,11 +1,33 @@
-.container {
+.container {    
     display: grid;
     grid-template-columns: 1fr 6fr .5fr 6fr 1fr;
+}
+
+.container-features{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 50px;
+
+    &__columns {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+
+}
+
+@media (max-width:  1366px) {
+    .container-features{
+    
+        &__columns {
+            grid-template-columns: 2fr 2fr;
+        }
+    
+    }
 }
 
 @media (max-width: 1024px) {
     .container {
         padding: 3.125rem;
         grid-template-columns: 1fr;
-    }
+    }    
 }
