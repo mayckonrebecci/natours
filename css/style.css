@@ -35,7 +35,8 @@
   padding: 0;
   border-style: none;
   text-decoration: none;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  list-style: none; }
 
 html {
   font-size: 80%; }
@@ -158,6 +159,14 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--green {
+  background-color: #55c57a;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #55c57a; }
+  .btn--green:hover {
+    transform: skewY(7deg); }
+
 .btn--move-from-bottom {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards; }
@@ -183,6 +192,38 @@ body {
 @media (max-width: 1024px) {
   .btn-text:link, .btn-text:visited {
     margin-bottom: 100px; } }
+
+.tours-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  margin-left: 6.125rem; }
+  .tours-card__side {
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .tours-card__side--front {
+      background-color: .tours-card__side--front color-white; }
+    .tours-card__side--back-1 {
+      transform: rotateY(180deg);
+      background: linear-gradient(to bottom right, #ffb900, #ff7730); }
+    .tours-card__side--back-2 {
+      transform: rotateY(180deg);
+      background: linear-gradient(to bottom right, #7ed56f, #8d9b96); }
+    .tours-card__side--back-3 {
+      transform: rotateY(180deg);
+      background: linear-gradient(to bottom right, #2998ff, #5643fa); }
+  .tours-card:hover .tours-card__side--front {
+    transform: rotateY(-180deg); }
+  .tours-card:hover .tours-card__side--back-1, .tours-card:hover .tours-card__side--back-2, .tours-card:hover .tours-card__side--back-3 {
+    transform: rotateY(0); }
 
 .composition {
   position: relative; }
@@ -212,12 +253,12 @@ body {
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding: 2.5rem;
   margin: 50px;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
   .feature-box__icon {
     font-size: 6rem;
@@ -237,10 +278,19 @@ body {
 .container-features {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 50px; }
+  padding: 0 3.125rem; }
   .container-features__columns {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr; }
+
+.container-tours {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 3.125rem;
+  margin-bottom: 8.25rem; }
+  .container-tours__columns {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr; }
 
 @media (max-width: 1366px) {
   .container-features__columns {
@@ -276,7 +326,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 20rem 0;
   margin-top: -20vh; }
 
 .section-features {
@@ -284,10 +334,16 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(141, 155, 150, 0.8)), url(../img/nat-4.jpg);
   background-size: cover; }
 
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  text-align: center; }
+
 @media (max-width: 1366px) {
   .section-about {
     margin-top: -15vh; } }
 
 @media (max-width: 1024px) {
   .section-about {
+    padding: 20rem 10rem;
     padding-bottom: 500px; } }
