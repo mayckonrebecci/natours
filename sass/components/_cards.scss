@@ -21,7 +21,7 @@
         box-shadow: 0 1.5rem 4rem $color-shadow;
 
         &--front {
-            background-color: &color-white;
+            background-color: $color-white;
         }
 
         &--back {

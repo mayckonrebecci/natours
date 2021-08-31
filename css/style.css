@@ -212,7 +212,7 @@ body {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .tours-card__side--front {
-      background-color: .tours-card__side--front color-white; }
+      background-color: #fff; }
     .tours-card__side--back-1 {
       transform: rotateY(180deg);
       background: linear-gradient(to bottom right, #ffb900, #ff7730); }
