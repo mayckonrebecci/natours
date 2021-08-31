@@ -1,13 +1,14 @@
 .btn {    
     &:link,
     &:visited {
+        font-size: 2rem;
         padding: 1.5rem 3rem;
         display: inline-block;
         text-transform: uppercase;
         border-radius: 6.25rem;
         transition: all 0.2s;
         position: relative;
-        font-weight: 900;
+        font-weight: 500;
     }
     
     &::after {
@@ -46,8 +47,21 @@
         
         &::after {
             background-color: $color-white;
-        }    
+        }       
         
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+        
+        &:hover {
+            transform: skewY(7deg);
+        }
     }
     
     &--move-from-bottom {
