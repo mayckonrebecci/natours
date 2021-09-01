@@ -5,5 +5,5 @@ Natours made with HTML and CSS
 
 Natours feito com HTML e CSS
 
-<img src="images/screenshot1.png">
-<img src="images/screenshot2.png">
+<img src="img/screenshot.png">
+<!-- <img src="images/screenshot2.png"> -->
