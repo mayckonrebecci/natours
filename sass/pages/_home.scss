@@ -20,8 +20,14 @@
 
 .section-tours {
     background-color: $color-grey-light-1;
-    padding: 15rem 0 15rem 0;
+    padding: 15rem 0;
     text-align: center;
+}
+
+.section-stories {
+    padding: 15rem 0;
+    text-align: center;
+    position: relative;    
 }
 
 @media (max-width: 1366px) {
