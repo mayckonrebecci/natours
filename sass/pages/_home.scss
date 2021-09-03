@@ -39,12 +39,12 @@
 
 .book {
     background-image:$half-color-half-transparent, url(../img/nat-10.jpg);
-    background-size: 100%;
+    background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem $color-shadow;
-    height: 50rem;
+    height: 55rem;
 
-    &__form {
+    &__form {   
         width: 50%;
         padding: 6rem;
     }
