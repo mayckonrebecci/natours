@@ -19,6 +19,11 @@ $color-pure-black: #000;
 
 $color-shadow: rgba($color-pure-black, .15);
 
+$half-color-half-transparent: linear-gradient(105deg, 
+rgba($color-white, .9) 0%, 
+rgba($color-white, .9) 50%, 
+transparent 50%);
+
 //FONT SIZES
 $default-font-size: 1.6rem;
 
