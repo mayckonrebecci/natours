@@ -40,6 +40,12 @@
     padding: 0 15rem;
 }
 
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 15rem;
+}
+
 @media (max-width:  1366px) {
     .container-features{
     
