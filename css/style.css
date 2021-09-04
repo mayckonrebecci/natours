@@ -406,7 +406,9 @@ body {
     transform: translate(-50%, -50%); }
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
-    filter: blur(2px) brightness(80%); }
+    filter: blur(2px) brightness(80%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
