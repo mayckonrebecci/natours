@@ -37,7 +37,7 @@
     
     &__text {
         margin-left: 20px;
-        transform: skewX(12deg);       
+        transform: skewX(12deg); 
     }
     
     &__caption {
@@ -63,5 +63,7 @@
     &:hover &__img { 
         transform: translateX(-4rem) scale(1);    
         filter: blur(2px) brightness(80%);   
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;      
     }
 }
