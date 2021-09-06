@@ -73,16 +73,13 @@
         left: 0;
         
         &::after {
+            @include center-screen-align;
             content: "";
             display: block;
             background-color: $color-primary;
             height: 1.2rem;
             width: 1.2rem;
             border-radius: 50%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
             opacity: 0;
             transition: opacity .2s;
         }
