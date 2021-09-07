@@ -73,7 +73,7 @@
         left: 0;
         
         &::after {
-            @include center-screen-align;
+            @include absoluteCenter;
             content: "";
             display: block;
             background-color: $color-primary;

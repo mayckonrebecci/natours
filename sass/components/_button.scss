@@ -61,10 +61,6 @@
         &::after {
             background-color: $color-primary;
         }
-        
-        &:hover {
-            transform: skewY(7deg);
-        }
     }
 
     &--green-2 {

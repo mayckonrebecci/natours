@@ -46,7 +46,7 @@
     }
     
     &__list {
-        @include center-screen-align;
+        @include absoluteCenter;
     }
 
     &__item {
