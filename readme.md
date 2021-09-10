@@ -9,4 +9,3 @@ Project NOT YET FINISHED
 Projeto AINDA NÃO TERMINADO
 
 <img src="img/screenshot1.png">
-<!-- <img src="images/screenshot2.png"> -->
