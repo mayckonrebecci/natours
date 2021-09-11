@@ -1,6 +1,16 @@
 .composition {
     position: relative;
 
+    @include respond (tab-port) {
+        margin-bottom: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    @include respond (phone) {
+        margin-bottom: 120px;
+    }
+
     &__photo {
         width: 55%;
         box-shadow: 0 1.5rem 4rem rgba($color-pure-black, .4);

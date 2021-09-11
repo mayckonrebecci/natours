@@ -9,6 +9,10 @@
     padding-left: 9rem;
     transform: skewX(-12deg);
     font-size: $default-font-size;
+   
+    @include respond (phone) {
+        transform: skewX(-3deg);
+    }
     
     &:not(:last-child) {
         margin-bottom: 9.375rem;
@@ -25,6 +29,13 @@
         transform: skewX(12deg) translateX(-3rem);
         position: relative;
         overflow: hidden;
+       
+        @include respond(phone) {
+            transform: skewX(3deg);
+            float: none;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
     }
     
     &__img {
@@ -38,6 +49,10 @@
     &__text {
         margin-left: 20px;
         transform: skewX(12deg); 
+        
+        @include respond (phone) {
+            transform: skewX(3deg);
+        }
     }
     
     &__caption {
