@@ -1,6 +1,12 @@
 .container {    
     display: grid;
-    grid-template-columns: 1fr 6fr .5fr 6fr 1fr;
+    grid-template-columns: 6fr 6fr;
+    padding: 0 10rem;
+    gap: 6.25rem;
+
+    @include respond (tab-port) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .container-features{
@@ -10,7 +16,19 @@
 
     &__columns {
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
+
+        @include respond (big-desktop) {
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+        }
+
+        @include respond (tab-land) {
+            grid-template-columns: 2fr 2fr;
+        }
+        
+        @include respond (phone) {
+            grid-template-columns: 2fr ;
+        }
     }
 
 }
@@ -24,6 +42,19 @@
     &__columns {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
+        gap: 6.25rem;
+
+        @include respond(big-desktop) {
+            gap: 12.5rem;
+        }
+
+        @include respond(tab-land) {
+            grid-template-columns: 2fr 2fr;
+        }
+        
+        @include respond(phone) {
+            grid-template-columns: 2fr ;
+        }
     }
 }
 
@@ -44,22 +75,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 15rem;
-}
+    gap: 50px;
 
-@media (max-width:  1366px) {
-    .container-features{
-    
-        &__columns {
-            grid-template-columns: 2fr 2fr;
-        }
-    
-    }
-}
-
-
-@media (max-width: 1024px) {
-    .container {
-        padding: 3.125rem;
+    @include respond (tab-port) {
         grid-template-columns: 1fr;
-    }    
+    }
+    @include respond (tab-port) {
+        padding: 0 5rem;
+    }
 }

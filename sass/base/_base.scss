@@ -11,7 +11,20 @@
 
 html {
     //This defines what 1rem is, so thats why its not on typography file
-	font-size: 80%;
+	font-size: 62.5%;
+    
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+    
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    
 }
 
 body {
@@ -22,21 +35,8 @@ body {
 	font-size: 1rem;
 	line-height: 1.7;
 	color: $color-dark-grey;
-}
 
-
-
-
-@media (max-width: 1366px) {
-    html {
-        //This defines what 1rem is, so thats why its not on typography file
-        font-size: 60%;
-    }
-}
-
-@media (max-width: 1024px) {
-    html {
-        //This defines what 1rem is, so thats why its not on typography file
-        font-size: 40%;
+    @include respond(tab-port) {
+        padding: 0;
     }
 }
