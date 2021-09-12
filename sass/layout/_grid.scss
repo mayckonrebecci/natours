@@ -13,11 +13,11 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 3.125rem;
-
+    
     &__columns {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr;
-
+        
         @include respond (big-desktop) {
             grid-template-columns: 2fr 2fr 2fr 2fr;
         }
@@ -69,6 +69,10 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 15rem;
+
+    @include respond (tab-port) {
+        padding: 0;
+    }
 }
 
 .container-footer {
