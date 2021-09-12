@@ -336,6 +336,44 @@ body {
   .tours-card__price-value {
     font-size: 6rem;
     font-weight: 300; }
+  @media (max-width: 56.25em) {
+    .tours-card {
+      height: auto;
+      border-radius: .625rem;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+      margin-top: auto; }
+      .tours-card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .tours-card__side--back {
+          transform: rotateY(0);
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .tours-card:hover .tours-card__side--front {
+        transform: rotateY(0); }
+      .tours-card__details {
+        padding: 1rem 3rem;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-content: center; }
+      .tours-card__details ul {
+        display: grid;
+        justify-content: center;
+        align-content: center; }
+      .tours-card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .tours-card__price-box {
+        margin-bottom: 3rem; }
+      .tours-card__price-value {
+        font-size: 4rem; } }
 
 .composition {
   position: relative; }
@@ -405,6 +443,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -430,6 +471,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -493,17 +538,31 @@ body {
     transform: translate(-50%, -50%) scale(0);
     transition: all .5s .2s;
     z-index: 2500; }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        display: grid; } }
   .popup__left-side {
     display: table-cell;
     width: 33.333333%; }
+    @media (max-width: 56.25em) {
+      .popup__left-side {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%; } }
   .popup__right-side {
     display: table-cell;
     width: 66.666667%;
     vertical-align: middle;
     padding: 4rem; }
+    @media (max-width: 56.25em) {
+      .popup__right-side {
+        width: 100%; } }
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        height: 100%; } }
   .popup__text {
     font-size: 1.4rem;
     column-count: 2;
@@ -511,6 +570,10 @@ body {
     column-rule: 1px solid #eee;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        column-count: 1;
+        font-size: 1.2rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -609,6 +672,9 @@ body {
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .footer__logo-box {
+        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -690,6 +756,9 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 15rem; }
+  @media (max-width: 56.25em) {
+    .container-book {
+      padding: 0; } }
 
 .container-footer {
   display: grid;
@@ -858,34 +927,69 @@ body {
   background-color: #f7f7f7;
   padding: 20rem 0;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding-top: 10rem;
+      padding-bottom: 15rem; } }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding-top: 10rem;
+      padding-bottom: 20rem; } }
 
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(141, 155, 150, 0.8)), url(../img/nat-4.jpg);
   background-size: cover; }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 10rem; } }
+  @media (max-width: 37.5em) {
+    .section-features {
+      padding: 5rem; } }
 
 .section-tours {
   background-color: #f7f7f7;
   padding: 15rem 0;
   text-align: center; }
+  @media (max-width: 56.25em) {
+    .section-tours {
+      padding: 10rem; } }
 
 .section-stories {
   padding: 15rem 0 25rem;
   text-align: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, -100vh 80%); }
+  @media (max-width: 56.25em) {
+    .section-stories {
+      padding: 10rem 0 20rem; } }
 
 .section-book {
   margin-top: -13vh;
   padding: 15rem 0;
   background: linear-gradient(to right bottom, #7ed56f, #8d9b96); }
+  @media (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem;
+      overflow: hidden; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  height: 55rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .book__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .book__form {
+        width: 100%; } }
