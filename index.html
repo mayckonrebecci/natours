@@ -82,9 +82,13 @@
 
                     <div class="container__columns">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+
+                            <img src="img/nat-1-large.jpg" srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" alt="Photo 1" class="composition__photo composition__photo--p1" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px">
+
+                            <img src="img/nat-2-large.jpg" srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" alt="Photo 2" class="composition__photo composition__photo--p2" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px">
+
+                            <img src="img/nat-3-large.jpg" srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" alt="Photo 3" class="composition__photo composition__photo--p3" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px">
+
                         </div>
                     </div>
 
@@ -360,7 +364,11 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source media="(max-width: 37.5em)" srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" alt="Full logo">
+                    <img src="img/logo-green-2x.png" srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" >
+                </picture>
             </div>
 
             <div class="container-footer">
