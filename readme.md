@@ -5,7 +5,4 @@ Natours made with HTML and CSS, CSS:BEM(Block Element Modifier), SASS(SCSS synta
 
 Natours feito com HTML e CSS, CSS:BEM(Block Element Modifier), SASS(SCSS syntax), Arquitetura SASS 7-1.
 
-Project NOT YET FINISHED
-Projeto AINDA NÃO TERMINADO
-
 <img src="img/screenshot1.png">
